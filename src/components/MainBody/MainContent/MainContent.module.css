@@ -128,13 +128,18 @@
 .addTaskDiv hr {
   margin: 10px auto;
 }
+.dateAndPriority{
+  /* border: 1px solid; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
 .addTaskDiv form .taskDate,
 .addTaskDiv form .taskPriority {
-  display: inline-block;
   margin-right: 10px;
-  width: auto;
+  /* width: auto; */
   border: 1px solid #888;
-  padding: 5px;
+  padding: 10px;
 }
 .taskFooter {
   /* border: 1px solid; */

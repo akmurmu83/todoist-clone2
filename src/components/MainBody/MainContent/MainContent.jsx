@@ -119,13 +119,14 @@ export default function MainContent({ isSidebarExpanded }) {
               className={Styles.taskDesc}
               placeholder="Task Description"
             />
-
-            <input type="date" name="taskDate" className={Styles.taskDate} />
-            <select name="taskPriority" className={Styles.taskPriority}>
-              <option value="high">High</option>
-              <option value="medium">Medium</option>
-              <option value="low">Low</option>
-            </select>
+            <div className={Styles.dateAndPriority}>
+              <input type="date" name="taskDate" className={Styles.taskDate} />
+              <select name="taskPriority" className={Styles.taskPriority}>
+                <option value="high">High</option>
+                <option value="medium">Medium</option>
+                <option value="low">Low</option>
+              </select>
+            </div>
             <hr />
 
             <div className={Styles.taskFooter}>
