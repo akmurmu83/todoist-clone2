@@ -1,0 +1,170 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Styling for hover on icons */
+.bgcOnHover {
+  transition: all 0.3s ease;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.bgcOnHover:hover {
+  background-color: #e9e6e6;
+  /* background-color: #444; */
+}
+
+/* ========= Main Body ======== */
+/* Today tab */
+.mainBody {
+  /* border: 1px solid; */
+  padding: 5% 8%;
+  width: 100%;
+  height: 200vh;
+  margin: auto;
+  margin-top: 0px;
+  transition: all 0.3s ease;
+}
+
+.mainBody i {
+  margin-right: 10px;
+  padding: 3px;
+}
+.mainBody .taskHeading {
+  border-bottom: 1px solid #888;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.mainBody .taskHeading div {
+  /* border: 1px solid; */
+  display: flex;
+  align-items: flex-end;
+  align-items: center;
+  padding: 5px;
+}
+.mainBody .taskHeading div p {
+  font-size: 12px;
+  color: #666;
+  margin-left: 5px;
+}
+.mainBody .taskHeading div:nth-child(2) i {
+  font-size: 16px;
+  margin-right: 5px;
+  /* border: 1px solid; */
+}
+.tasksDiv {
+  /* border: 1px solid; */
+  margin-top: 20px;
+}
+
+/* Individual Tasks */
+.taskDiv {
+  border-bottom: 1px solid #888;
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 5px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+.taskDiv > div {
+  /* border: 1px solid; */
+  display: flex;
+}
+.taskDiv > div > div:nth-child(2) span {
+  /* border: 1px solid; */
+  margin-top: 5px;
+  font-size: 13px;
+  color: #555;
+}
+.rightTaskSec {
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.taskDiv:hover .rightTaskSec {
+  opacity: 1;
+}
+
+/* ======== Add Task ======== */
+.addTask {
+  /* border: 1px solid; */
+  margin-top: 20px;
+  width: fit-content;
+  border: 1x solid;
+  margin: auto;
+}
+.vanishAddTask{
+  display: none;
+}
+.addTask:hover {
+  color: red;
+  cursor: pointer;
+}
+.addTaskDiv {
+  border: 1px solid;
+  padding: 3px;
+  color: #999;
+  border-radius: 3px;
+  width: 100%;
+  display: none;
+}
+.visibleAddTaskDiv{
+  display: block;
+}
+.addTaskDiv input {
+  border: 1px solid;
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 5px;
+  border: none;
+  outline: none;
+}
+.taskName{
+  font-size: 20px;
+}
+.addTaskDiv hr {
+  margin: 10px auto;
+}
+.addTaskDiv form .taskDate,
+.addTaskDiv form .taskPriority {
+  display: inline-block;
+  margin-right: 10px;
+  width: auto;
+  border: 1px solid #888;
+  padding: 5px;
+}
+.taskFooter {
+  /* border: 1px solid; */
+  display: flex;
+  justify-content: flex-end;
+  padding: 3px;
+}
+.taskFooter .formBtns {
+  font-weight: bold;
+  width: 100px;
+  height: 30px;
+  margin-left: 5px;
+  cursor: pointer;
+  background-color: #cdcdcd;
+  border: none;
+  border-radius: 3px;
+  opacity: 0.8;
+}
+.taskFooter .submitBtn {
+  background-color: #dc4c3e;
+}
+.taskFooter .formBtns:hover {
+  opacity: 1;
+}
+
+/* Media Quaries */
+@media screen and (max-width: 800px) {
+  /* Styles for screens with a maximum width of 800 pixels or less */
+  .fadedMainBody {
+    opacity: 0.3;
+    background-color: #000;
+  }
+}
