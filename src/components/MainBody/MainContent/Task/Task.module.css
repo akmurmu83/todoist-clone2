@@ -13,13 +13,25 @@
 .taskDiv {
   border-bottom: 1px solid #888;
   display: flex;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  box-shadow: rgba(167, 156, 156, 0.16) 0px 1px 4px;
   justify-content: space-between;
   cursor: pointer;
-  padding: 5px;
+  padding: 5px 8px;
   text-align: left;
-  height: 60px;
+  height: 70px;
   margin-bottom: 10px;
+}
+.taskName{
+  font-weight: bold;
+}
+.taskDesc{
+  font-size: 14px;
+}
+.increaseSize {
+  font-size: 20px;
+}
+.increaseSize:hover {
+  font-weight: bold;
 }
 .taskDiv > div {
   /* border: 1px solid; */

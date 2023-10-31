@@ -53,7 +53,7 @@ export default function MainContent({ isSidebarExpanded }) {
     // setTodos([...todos, {id, name}]);
     setTodos([...todos, { id, name, desc, date, priority }]);
     console.log(todos);
-    e.target.reset();
+    // e.target.reset();
     toggleAddTaskDiv();
   }
 
@@ -120,7 +120,7 @@ export default function MainContent({ isSidebarExpanded }) {
               placeholder="Task Description"
             />
             <div className={Styles.dateAndPriority}>
-              <input type="date" name="taskDate" className={Styles.taskDate}  value='Set Date'/>
+              <input type="date" name="taskDate" className={Styles.taskDate} />
               <select name="taskPriority" className={Styles.taskPriority}>
                 <option value="priority">Priority</option>
                 <option value="high">High</option>
