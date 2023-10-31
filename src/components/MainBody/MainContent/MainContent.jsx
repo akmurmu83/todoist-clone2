@@ -120,8 +120,9 @@ export default function MainContent({ isSidebarExpanded }) {
               placeholder="Task Description"
             />
             <div className={Styles.dateAndPriority}>
-              <input type="date" name="taskDate" className={Styles.taskDate} />
+              <input type="date" name="taskDate" className={Styles.taskDate}  value='Set Date'/>
               <select name="taskPriority" className={Styles.taskPriority}>
+                <option value="priority">Priority</option>
                 <option value="high">High</option>
                 <option value="medium">Medium</option>
                 <option value="low">Low</option>
